@@ -19,7 +19,7 @@ public class PerformancePanel extends JPanel {
 	 * Create the panel.
 	 */
 	public PerformancePanel() {
-		setLayout(new MigLayout("", "[][][]", "[]"));
+		setLayout(new MigLayout("", "[][][]", "[][][][][][]"));
 		
 		JLabel lblEmployeeId = new JLabel("Employee ID:");
 		add(lblEmployeeId, "cell 0 0,alignx trailing");
@@ -31,6 +31,21 @@ public class PerformancePanel extends JPanel {
 		
 		JButton btnEnter = new JButton("Enter");
 		add(btnEnter, "cell 2 0");
+		
+		JLabel lblSalary = new JLabel("Salary");
+		add(lblSalary, "cell 0 1");
+		
+		JLabel lblPerformanceReviewDate = new JLabel("Performance Review Date");
+		add(lblPerformanceReviewDate, "cell 0 2");
+		
+		JLabel lblMerit = new JLabel("Merit");
+		add(lblMerit, "cell 0 3");
+		
+		JLabel lblNextPerformanceReview = new JLabel("Next Performance Review Date");
+		add(lblNextPerformanceReview, "cell 0 4");
+		
+		JLabel lblNextPerformanceReivew = new JLabel("Next Performance Reivew Rating");
+		add(lblNextPerformanceReivew, "cell 0 5");
 
 	}
 
